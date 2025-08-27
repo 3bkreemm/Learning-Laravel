@@ -9,10 +9,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/3bkreem','index');
+//this Route take parameter  
 
-Route::get('/abdo',[TestController::class,'abdo']);
+// ? => may have value and may be null
+Route::get('/printname/{name?} ',[TestController::class,'PrintName']);
 
-//redirect (url,distination)
 
-Route::redirect('/gmail','https://gmail.com');
