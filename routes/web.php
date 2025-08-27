@@ -13,7 +13,8 @@ Route::get('/abdo',[TestController::class,'abdo']);
 //this Route take parameter  
 
 // ? => may have value and may be null
-Route::get('/printname/{name?} ',[TestController::class,'PrintName']);
+//-> refer to the uri with different name
+Route::get('/printname/{name?} ',[TestController::class,'PrintName'])->name('thename');
 
 Route::get('/3bkreem',function(){
     return view('index');

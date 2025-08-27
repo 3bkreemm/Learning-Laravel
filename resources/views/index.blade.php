@@ -270,8 +270,11 @@
             </main>
         </div>
         <h3 style=" color: red; " >hello from index file</h3>
-        //two curly braces like echo in php
-        <a href = "{{ url('/printname/abdooo') }}" style="color:red;">print my name</a>
+        <!-- two curly braces like echo in php -->
+        <!-- route function is used to refer the name of route -->
+        <!-- to pass the parameter in the anker tag we use array and
+             the first index is the key and the second is the value-->
+        <a href = "{{ route('thename',['name' => 'abdelkarim']) }}" style="color:red;">print my name</a>
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
