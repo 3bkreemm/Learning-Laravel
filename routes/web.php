@@ -6,11 +6,13 @@ use App\Http\Controllers\TestController;
 //to return view
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
-// Route::get('/3bkreem',function (){
-//     return "I'm abdlekarim mohsen";
-// });
+Route::view('/3bkreem','index');
 
 Route::get('/abdo',[TestController::class,'abdo']);
+
+//redirect (url,distination)
+
+Route::redirect('/gmail','https://gmail.com');

@@ -269,8 +269,7 @@
                 </div>
             </main>
         </div>
-        <h3 style="color : red" >hello from index file</h3>
-
+        <h3 style=" color: red; " >hello from index file</h3>
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
