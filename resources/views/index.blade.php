@@ -270,6 +270,8 @@
             </main>
         </div>
         <h3 style=" color: red; " >hello from index file</h3>
+        //two curly braces like echo in php
+        <a href = "{{ url('/printname/abdooo') }}" style="color:red;">print my name</a>
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
