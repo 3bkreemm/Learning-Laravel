@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\SingleController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 
@@ -27,7 +29,6 @@ Route::controller(TestController::class)->group(function (){
 //artisan commands 
 /** 
  * [php artisan route:list] => used to display all routes in the project
- * 
- * 
 */
 
+Route::get('/hello',SingleController::class);
