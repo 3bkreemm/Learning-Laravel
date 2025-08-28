@@ -17,3 +17,9 @@ class TestController extends Controller
 
     
 }
+/**
+ * creating controller from terminal
+ * 
+ * php artisan make:controller [the name of controller ] 
+ * used to create new controller
+*/
