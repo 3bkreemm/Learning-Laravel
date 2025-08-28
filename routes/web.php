@@ -23,3 +23,11 @@ Route::controller(TestController::class)->group(function (){
 
     Route::get('/printname/{name?} ','PrintName')->name('thename');
 });
+
+//artisan commands 
+/** 
+ * [php artisan route:list] => used to display all routes in the project
+ * 
+ * 
+*/
+
