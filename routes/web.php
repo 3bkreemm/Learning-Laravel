@@ -9,13 +9,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/abdo',[TestController::class,'abdo']);
-//this Route take parameter  
+// Route::get('/abdo',[TestController::class,'abdo']);
+// Route::get('/printname/{name?}',[TestController::class,'PrintName'])->name('thename');
 
-// ? => may have value and may be null
-//-> refer to the uri with different name
-Route::get('/printname/{name?} ',[TestController::class,'PrintName'])->name('thename');
+// Route::get('/3bkreem',function(){
+//     return view('index');
+// });
 
-Route::get('/3bkreem',function(){
-    return view('index');
+//Route grouping
+//using the common controller and class
+Route::controller(TestController::class)->group(function (){
+    Route::get('/abdo','abdo');
+
+    Route::get('/printname/{name?} ','PrintName')->name('thename');
 });
